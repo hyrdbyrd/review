@@ -4,12 +4,12 @@
   <div class="chat__wrapper">
     {% block header %} {% include "includes/header.html" %} {% endblock %} 
     {% block content %}
-    <div class="chat__content">
-      <div class="chat">
-        <input type="text" class="chat__search-form" placeholder="Поиск" />
+    <div class="chats__content">
+      <div class="chats">
+        <input type="text" class="chat__search_form" placeholder="Поиск" />
         <ul class="chat__list">
           {% for chat in chats |sort(false, true, 'messageDate') %}
-          <a href="#" class="chat__item chat__item_type_link">
+          <a href="#" class="chat__item_link">
             <li class="chat__item">
               <div class="chat__item_avatar">
                 <img

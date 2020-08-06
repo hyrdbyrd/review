@@ -13,12 +13,12 @@ const PORT = 4000;
 function setUpNunjucks(expressApp) {
   let env = nunjucks.configure("views/", {
     autoescape: true,
-    express: expressApp,
+    express: app,
   });
   //добавление новых фильтров
   env.addFilter("date", dateFilter);
 }
-setUpNunjucks(app);
+setUpNunjucks();
 
 app.get("/signup", (req, res) => {
   res.render("signup");

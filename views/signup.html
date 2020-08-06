@@ -1,0 +1,44 @@
+{% extends 'index.html' %}
+{% block title %}
+  Регистрация
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="auth__container">
+    <div class="auth">
+      <!-- ввел доп параметр для работы со стилями в инклюд  -->
+      {% set isSignUp = true %}
+      {% include "includes/auth_control.html" %}
+      <div class="auth__wrapper">
+        <form action="/" class="auth__form form-group">
+          <div class="auth__header">Регистрация</div>
+          <div class="auth__input_wrapper">
+            <label for="email" class="auth__label">Адрес электронной почты
+              <input class="auth__input email form-control" placeholder="Адрес электронной почты" name="email" type="text" />
+            </label>
+          </div>
+          <div class="auth__input_wrapper">
+            <label for="username" class="auth__label">Имя пользователя
+              <input class="auth__input username form-control" placeholder="Имя пользователя" name="username" type="text" />
+            </label>
+          </div>
+          <div class="auth__input_wrapper">
+            <label for="password1" class="auth__label">Пароль
+              <input class="auth__input password form-control" name="password1" type="password" placeholder="Пароль" />
+            </label>
+          </div>
+          <div class="auth__input_wrapper">
+            <label for="password2" class="auth__label">Пароль еще раз
+              <input class="auth__input password_confirm form-control" name="password2" type="password" placeholder="Пароль еще раз" />
+            </label>
+          </div>
+          {% set btnText = 'Зарегистрироваться' %}
+          {% set  btnClass = 'auth__btn' %}
+          {% include "includes/button.html" %}
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock  %}

@@ -1,0 +1,45 @@
+/* СТИЛИ ДЛЯ НАСТРОЕК ПОЛЬЗОВАТЕЛЯ */
+.user__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+  
+  }
+  
+  .settings__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    width: 15rem;
+  }
+  
+  .settings__input {
+    height: 2rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .user__avatar {
+    min-width: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .user__avatar_img {
+    width: 8vw;
+    min-width: 4rem;
+    border-radius: 50%;
+  
+  }
+  
+  
+  .user__settings {
+    display: flex;
+    flex-direction: column;
+  }

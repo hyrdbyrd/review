@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %} Main Page {% endblock %}</title>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+
+  <body>
+    {% block header %} {% include "includes/home.html" %} {% endblock %} 
+    {% block content %}
+      <div style="display: flex; flex-direction: column; padding: 20px;">
+        <a href="/signin">Авторизация</a>
+        <a href="/signup">Регистрация</a>
+        <a href="/page404">Страница 404</a>
+        <a href="/page500">Страница 500</a>
+        <a href="/chatlist">Список чатов</a>
+        <a href="/chat">Лента переписки</a>
+        <a href="/user_settings">Профиль пользователя</a>
+      </div>
+    {% endblock %}
+    <script src="utils/validate.js"></script>
+  </body>
+</html>

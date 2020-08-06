@@ -1,0 +1,44 @@
+{% extends 'index.html' %} {% block title %} Авторизация {% endblock %} {% block
+content %}
+
+<div class="container">
+  <div class="auth__container">
+    <div class="auth">
+      <!-- ввел доп параметр для работы со стилями в инклюд  -->
+      {% set isSignIn = true %} 
+      {% include "includes/auth_control.html" %}
+      <div class="auth__wrapper">
+        <form action="/" class="auth__form form-group">
+          <div class="auth__header">Войти</div>
+          <div class="auth__input_wrapper">
+            <label for="username" class="auth__label"
+              >Имя пользователя
+              <input
+                class="auth__input username form-control"
+                placeholder="Имя пользователя"
+                name="username"
+                type="text"
+              />
+            </label>
+          </div>
+          <div class="auth__input_wrapper">
+            <label for="password" class="auth__label"
+              >Пароль
+              <input
+                class="auth__input password form-control"
+                placeholder="Пароль"
+                name="password"
+                type="password"
+              />
+            </label>
+          </div>
+          {% set btnText = 'Войти' %}
+          {% set  btnClass = 'auth__btn' %}
+          {% include "includes/button.html" %}
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

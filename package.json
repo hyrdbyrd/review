@@ -1,0 +1,33 @@
+{
+  "name": "mf.messenger.praktikum.yandex",
+  "version": "1.0.0",
+  "description": "Адрес Netlify  https://adoring-knuth-cfd5e9.netlify.app",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "nodemon": "^2.0.4",
+    "nunjucks-date-filter": "^0.1.1",
+    "surge": "^0.21.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bzhekshiev/mf.messenger.praktikum.yandex.git"
+  },
+  "keywords": [],
+  "author": "tom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bzhekshiev/mf.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/bzhekshiev/mf.messenger.praktikum.yandex#readme"
+}

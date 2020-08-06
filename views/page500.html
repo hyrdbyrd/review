@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+  {% block title %}
+    500
+  {% endblock %}
+{% block content %}
+  <div class="container">
+    <div class="wrapper">
+      <div class="page-error__content">
+        <h1 class="page-error__header">500</h1>
+        <p class="page-error__text">
+          Ошибка сервера
+        </p>
+        <p class="page-error__detail">
+          Запрос временно не может быть обработан. Попробуйте обновить
+          страницу или зайти позже
+        </p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

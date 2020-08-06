@@ -1,0 +1,81 @@
+/*    СТИЛИ СТРАНИЦ АВТОРИЗАЦИИ И РЕГИСТРАЦИИ    */
+.auth__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth {
+  min-width: 12rem;
+  width: 18rem;
+  min-height: 12rem;
+}
+
+.auth__control {
+  height: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 15px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 2px 2px #ccc;
+}
+
+.auth__sign-link-active {
+  border-bottom: 3px solid #0f59c7;
+}
+
+.auth__sign-link {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+
+.auth__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80%;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  padding: 15px 15px;
+  box-shadow: 0 2px 2px 2px #ccc;
+}
+
+.auth__header {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 1em;
+  border-bottom: 3px solid #0f59c7;
+  color: #333;
+  padding: 5px;
+}
+
+.auth__input_wrapper {
+  display: flex;
+
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.auth__label {
+  width: 100%;
+  color: #333;
+}
+
+.auth__input {
+  width: 100%;
+  height: 2rem;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  color: #333;
+  padding: 5px 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+}

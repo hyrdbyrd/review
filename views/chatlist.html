@@ -1,0 +1,42 @@
+{% extends 'index.html' %}
+<div class="container">
+  <div class="chat__wrapper">
+    {% block header %}
+      {% include "includes/header.html" %}
+    {% endblock %}
+
+    {% block content %}
+    <div class="chats__content">
+      <div class="chats">
+        <input type="text" class="chat__search_form" placeholder="Поиск">
+        <ul class="chat__list">
+          {% for chat in chats  %}
+          <a href="#" class="chat__item_link">
+            <li class="chat__item">
+              <div class="chat__item_avatar">
+                <img class="chat__item_img" src="{{ chat.avatar }}" alt="Avatar" />
+              </div>
+              <div class="chat__item_detail">
+                <div class="chat__item_section">
+                  <div class="chat__item_title">{{ chat.title }}</div>
+                  <div class="chat__item_lastdate">{{ chat.last_date | date('D.MM.YYYY') }}</div>
+                </div>
+                <div class="chat__item_section">
+                  <div class="chat__item_author">{{ chat.author }}</div>
+                  <div class="chat__item_message">
+                    {{ chat.message | truncate(30)}}
+                  </div>
+                </div>
+              </div>
+            </li>
+          </a>
+          {% endfor %}
+
+        </ul>
+      </div>
+      <div class="messages">
+        <div class="message__wrapper">
+          Выберите чат для начала общения
+        </div>
+      </div>
+      {% endblock %}

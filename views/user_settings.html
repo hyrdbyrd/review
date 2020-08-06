@@ -1,0 +1,75 @@
+{% extends 'index.html' %} {% block title %} Профиль пользователя {% endblock %}
+{% block content %}
+<div class="container">
+  <div class="wrapper">
+    <div class="user__wrapper">
+      <div class="user__avatar">
+        <img
+          src="https://yt3.ggpht.com/a/AGF-l7_2Yb4zGh_CpGmALFruR4XavmxUDZC7zoTbNQ=s900-c-k-c0xffffffff-no-rj-mo"
+          alt="Avatar"
+          class="user__avatar_img"
+        />
+        <a href="#" class="user_avatar_change-link">Изменить фото</a>
+      </div>
+      <form class="user__settings form-group">
+        <label for="username" class="settings__label"
+          >Имя пользователя
+          <input
+            class="settings__input username form-control"
+            placeholder="Имя пользователя"
+            name="username"
+            type="text"
+          />
+        </label>
+        <label for="fullname" class="settings__label"
+          >ФИО
+          <input
+            class="settings__input form-control"
+            placeholder="ФИО"
+            name="fullname"
+            type="text"
+          />
+        </label>
+        <label for="email" class="settings__label"
+          >Email
+          <input
+            class="settings__input email form-control"
+            placeholder="Email"
+            name="email"
+            type="text"
+          />
+        </label>
+        <label for="old_pass" class="settings__label"
+          >Старый пароль
+          <input
+            class="settings__input form-control"
+            placeholder="Старый пароль"
+            name="old_pass"
+            type="password"
+          />
+        </label>
+        <label for="new_pass1" class="settings__label"
+          >Новый пароль
+          <input
+            class="settings__input password form-control"
+            placeholder="Новый пароль"
+            name="new_pass1"
+            type="password"
+          />
+        </label>
+        <label for="new_pass2" class="settings__label"
+          >Новый пароль еще раз
+          <input
+            class="settings__input password_confirm form-control"
+            placeholder="Новый пароль еще раз"
+            name="new_pass2"
+            type="password"
+          />
+        </label>
+        {% set btnText = 'Изменить настройки' %} {% set btnClass ='user__settings_btn' %} 
+        {% include "includes/button.html" %}
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

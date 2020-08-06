@@ -1,0 +1,50 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "[html]": {
+        
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+    },
+    "html.format.contentUnformatted": "",
+    "files.associations": {
+
+        "**/*.html": "html",
+        "**/templates/**/*.html": "django-html",
+        "**/templates/**/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+        "*.html":[ "django-html", "njk"]
+
+    },
+    "beautify.language": {
+        "html": [
+            "htm", "html", "django-html"
+        ]
+    },
+    "[django-html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "files.autoSave": "afterDelay",
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--max-line-length","79", "--experimental"
+    
+    ],
+    "django.snippets.exclude": [
+
+        "cms",
+        "wagtail"
+    ],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "emmet.includeLanguages": {
+        
+        "njk": "html"
+    },
+    "emmet.excludeLanguages": [
+
+        "markdown"
+    ],
+}
